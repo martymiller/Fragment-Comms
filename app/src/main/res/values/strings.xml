@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">FragmentComms</string>
     <string name="activity_interface">Activity Interface</string>
-    <string name="button_text_plus">Plus</string>
-    <string name="button_text_minus">Minus</string>
+    <string name="button_text_plus">Plus One</string>
 </resources>
