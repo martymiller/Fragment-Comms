@@ -8,44 +8,28 @@
     android:background="@drawable/main_background"
     tools:context=".MainActivity">
 
-<androidx.constraintlayout.widget.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal_guideline"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vertical_guideline"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <FrameLayout
-        android:id="@+id/fragment_layout_1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toTopOf="@id/horizontal_guideline"
-        app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    <TextView
+        android:id="@+id/fragment_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/colorAccent" />
-
-    <FrameLayout
-        android:id="@+id/fragment_layout_2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toTopOf="@id/horizontal_guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/colorPrimary" />
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        tools:text="12345"
+        />
 
     <Button
-        android:id="@+id/button_activity_plus"
+        android:id="@+id/button_fragment_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_text_plus"
